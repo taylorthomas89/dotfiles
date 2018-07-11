@@ -1,0 +1,19 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "editor.fontSize": 13,
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.lineHeight": 22,
+  "editor.renderIndentGuides": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "files.autoSave": "onFocusChange",
+  "[markdown]": {
+    "editor.quickSuggestions": false
+  },
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.editor.tabSizing": "shrink",
+  "window.clickThroughInactive": false,
+  "window.newWindowDimensions": "inherit"
+}
