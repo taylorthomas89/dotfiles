@@ -1,75 +1,10 @@
 {
-  // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
-  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
-  // same ids are connected.
-  // Example:
   "Console Log": {
     "prefix": "clog",
     "body": [
       "console.log('$1');"
     ],
     "description": "Log output to console"
-  },
-  "Angular Controller": {
-    "prefix": "acontroller",
-    "body": [
-      "app.controller('homeController', function($scope, $state, $stateParams) {",
-      "",
-      "})"
-    ],
-    "description": "AngularJS controller"
-  },
-  "Angular Module": {
-    "prefix": "amodule",
-    "body": [
-      "var app = angular.module('myApp', ['ui.router'])"
-    ],
-    "description": "AngularJS module"
-  },
-  "Angular Service": {
-    "prefix": "aservice",
-    "body": [
-      "app.service('homeService', function($http) {",
-      "",
-      "})"
-    ],
-    "description": "AngularJS service"
-  },
-  "Angular Filter": {
-    "prefix": "afilter",
-    "body": [
-      "app.filter('homeFilter', function() {",
-      "// In the return function, we must pass in a single parameter which will be the data we will work on.",
-      "// We have the ability to support multiple other parameters that can be passed into the filter optionally",
-      "  return function(input, optional1, optional2) {",
-      "    var output;",
-      "    // Do filter work here",
-      "",
-      "    return output;",
-			"	}",
-      "});",
-      "",
-      "// For more go to https://scotch.io/tutorials/building-custom-angularjs-filters"
-    ],
-    "description": "AngularJS service"
-  },
-  "Angular UI Router": {
-    "prefix": "uiRouter",
-    "body": [
-      "app.config(function($stateProvider, $urlRouterProvider) {",
-      "",
-      "	$urlRouterProvider.otherwise('/');",
-      "",
-      "  $stateProvider",
-      "    .state('home', {",
-      "      url: '/',",
-      "      templateUrl: './views/home.html',",
-      "      controller: 'homeController'",
-			"		})",
-      "})"
-    ],
-    "description": "UI Router"
   },
   "React-Redux Reducer": {
     "prefix": "rreducer",
