@@ -1,0 +1,50 @@
+# .___                      __             .__    .__            
+# |   |   ____     ______ _/  |_  _____    |  |   |  |     ______
+# |   |  /    \   /  ___/ \   __\ \__  \   |  |   |  |    /  ___/
+# |   | |   |  \  \___ \   |  |    / __ \_ |  |__ |  |__  \___ \ 
+# |___| |___|  / /______>  |__|   (______/ |____/ |____/ /______>
+   
+### HOMEBREW INSTALL ###
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install coreutils
+
+### NODE / NVM INSTALL ###
+brew install nvm
+nvm install --lts
+
+# add the following to your bash profile
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+# verify that your system recognizes everything now
+which node
+node -v
+
+### MONGO INSTALL ###
+brew install mongodb
+sudo mkdir -p /data/db
+sudo chown -R $USER:$GROUP /data/db
+
+### POSTGRESQL INSTALL ###
+brew install postgresql
+
+### RUBY INSTALL ###
+brew install rbenv ruby-build
+
+# Add rbenv to bash so that it loads every time you open a terminal
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+clear; source ~/.bash_profile
+
+### INTSALL RUBY ###
+rbenv install 2.5.1
+rbenv global 2.5.1
+ruby -v
+
+### RAILS INSTALL ###
+gem install rails -v 5.2.0
+
+# Rails is now installed, but in order for us to use the rails executable, we need to tell rbenv to see it:
+rbenv rehash
+
+# And now we can verify Rails is installed:
+rails -v
